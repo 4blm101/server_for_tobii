@@ -56,7 +56,7 @@ int main()
 		printf("%s", log(req, res).c_str());
 		});
 
-	svr.listen("localhost", 20001);
+	svr.listen("0.0.0.0", 20001);
 	t.join();
 
 	return 0;
